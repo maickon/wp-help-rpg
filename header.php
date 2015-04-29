@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 $wp_tag = new WpHtmlClass();
 $wp_tag->html();
@@ -10,9 +11,9 @@ $wp_tag->html();
 		$wp_tag->meta('http-equiv="content-type" content="' . get_bloginfo('html-type') . ' ' .  get_bloginfo('charset') . '"');
 		$wp_tag->link('rel="stylesheet" href=" ' .get_bloginfo('stylesheet_url'). ' " type="text/css" media="all"');
 		
-		$wp_tag->link('rel="stylesheet" href="wp-content/themes/wp-maickon/css/bootstrap-theme.min.css " type="text/css" media="all"');
-		$wp_tag->link('rel="stylesheet" href="wp-content/themes/wp-maickon/css/bootstrap.css " type="text/css" media="all"');
-		$wp_tag->link('rel="stylesheet" href="wp-content/themes/wp-maickon/css/bootstrap.min.css " type="text/css" media="all"');
+		$wp_tag->link('rel="stylesheet" href="wp-content/themes/wp-help-rpg/css/bootstrap-theme.min.css " type="text/css" media="all"');
+		$wp_tag->link('rel="stylesheet" href="wp-content/themes/wp-help-rpg/css/bootstrap.css " type="text/css" media="all"');
+		$wp_tag->link('rel="stylesheet" href="wp-content/themes/wp-help-rpg/css/bootstrap.min.css " type="text/css" media="all"');
 		 
 		wp_head(); //permite que o arquivo header possa ser carregado.
 	$wp_tag->head;
@@ -21,7 +22,7 @@ $wp_tag->body();
 $wp_tag->div('class="row logo"');
 	$wp_tag->div('class="container"');
 		$wp_tag->a('href="'.get_option('home').'"');
-			$wp_tag->img('src="wp-content/themes/wp-maickon/img/helpRpg.png" id="img_logo"');
+			$wp_tag->img('src="wp-content/themes/wp-help-rpg/img/helpRpg.png" id="img_logo"');
 		$wp_tag->a;
 	$wp_tag->div;
 $wp_tag->div;
@@ -57,7 +58,7 @@ $links = array(
 				$page_8->ID,
 			);
 
-new WpTwitterBootstrapMenu('Site Name', $menus, $links, 1);
-
+$menu = new WpTwitterBootstrapMenu();
+$menu->WpMenu('Help Rpg', $menus, $links, 1);
 
 ?>

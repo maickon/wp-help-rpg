@@ -1,35 +1,28 @@
 <?php
 get_header();
 $wp_tag->div('class="container"'); 
-
 	$wp_tag->div('class="row"');
-	
 		$wp_tag->div('class="span9"');
 			if(have_posts()) : while(have_posts()) : the_post(); 
-					$wp_tag->div('class="span4 public"');
-						$wp_tag->a('href="'.get_permalink().'"');
-							$wp_tag->h4('class="title"'); 
-								the_title(); 
-							$wp_tag->h4;
-						$wp_tag->a;
-	
-						$wp_tag->a('href="'.get_permalink().'"');
-							$wp_tag->img('src="wp-content/themes/wp-help-rpg/img/rpg-01.jpg" class="img-polaroid"');
-						$wp_tag->a;
+					$wp_tag->div('class="span8 public"');
 						
-						$wp_tag->div('class="post"');
-				 			the_excerpt(); 
-				 			$wp_tag->div('class="date"');
-				 				$wp_tag->wp_print('Publicado por <b>').the_author().$wp_tag->wp_print('</b> em ');
-				 				the_time("d/m/Y");
-				 				$wp_tag->wp_print("às: ");
-				 				the_time("g:i a");
-				 			$wp_tag->div;
-				 				
-					 		$wp_tag->a('class="btn" href="'.get_permalink().'"');
-					 			$wp_tag->wp_print('Mais Detalhes &raquo;');
-					 		$wp_tag->a;
-					 		
+						$wp_tag->p('class="post_title"');
+							
+							the_title();
+						
+							$wp_tag->span('class="post_date"'); 
+								
+								$wp_tag->wp_print('Publicado por <b>').the_author().$wp_tag->wp_print('</b> em ');
+								the_time("d/m/Y");
+								$wp_tag->wp_print("às: ");
+								the_time("g:i a");
+							
+							$wp_tag->span;
+						
+						$wp_tag->p;
+						
+						$wp_tag->div('class="post_content"');
+				 			the_content();  		
 				 		$wp_tag->div;
 				 	$wp_tag->div;
 			 		
@@ -44,15 +37,10 @@ $wp_tag->div('class="container"');
 		$wp_tag->div('class="span3"');
 			get_sidebar();
 		$wp_tag->div;
-
 	$wp_tag->div;
-	
-$wp_tag->div;	
-	
+$wp_tag->div;
+
 get_footer();
-
-
-
 
 $wp_tag->wp_print('
 			<script src="wp-content/themes/wp-help-rpg/js/jquery.js"></script>
