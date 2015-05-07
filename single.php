@@ -6,19 +6,20 @@ $wp_tag->div('class="container"');
 			if(have_posts()) : while(have_posts()) : the_post(); 
 					$wp_tag->div('class="span8 public"');
 						
-						$wp_tag->p('class="post_title"');
-							
+						$wp_tag->div('class="post_title"');
 							the_title();
-							$wp_tag->span('class="post_date"'); 
-								
-								$wp_tag->wp_print('Publicado por <b>').the_author().$wp_tag->wp_print('</b> em ');
-								the_time("d/m/Y");
-								$wp_tag->wp_print("às: ");
-								the_time("g:i a");
+						$wp_tag->div;
 							
-							$wp_tag->span;
+						$wp_tag->div('class="post_date"'); 
+								
+							$wp_tag->wp_print('Publicado por <b>').the_author().$wp_tag->wp_print('</b> em ');
+							the_time("d/m/Y");
+							$wp_tag->wp_print("às: ");
+							the_time("g:i a");
 						
-						$wp_tag->p;
+						$wp_tag->div;
+						
+						
 						
 						$wp_tag->div('class="post_content"');
 				 			the_content();  	

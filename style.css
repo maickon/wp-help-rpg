@@ -34,8 +34,21 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-.public{
-    opacity: 0.9;
+.title{
+	font-size: 12px;
+    font-weight: bold;
+}
+
+.title_noticias_index{
+    margin-top: 14px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title_index{
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .page_post{
@@ -43,9 +56,28 @@ body{
     width: auto;
     height: auto;
 }
+
+.img_post_index{
+    width: 340px;
+    height: 240px;
+}
+
 .img_post{
-	width: 280px;
-    height: 280px;
+	width: 140px;
+    height: 140px;
+}
+
+.post_box_index{
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.post_box{
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
 .post{
@@ -55,7 +87,8 @@ body{
 }
 
 .post_title{
-	 margin-top:20px;
+	margin-top:20px;
+    margin-bottom:4px;
     font-size: 28px;
     font-weight: bold;
 }
@@ -66,6 +99,7 @@ body{
     font-weight:lighter;
     white-space: nowrap;
     border-bottom: 1px solid rgb(149,149,149);
+    margin-bottom: 14px;
 }
 
 .post_content{
@@ -74,22 +108,14 @@ body{
 }
 
 .date{
-	font: bold;   
+	font-weight: bold;
+    font-size: 12px;
 }
 
 img{
 	margin:5px;
 	width: 280px;
 	height: 280px;
-}
-
-.bb{
-	background-color: red;
-}
-
-.aa{
-    background-color: yellow;
-    opacity: 0.9;
 }
 
 .rodape{
@@ -110,6 +136,10 @@ img{
     text-decoration: none;
 }
 
+.footer{
+	padding: 14px;
+    margin: 14px;
+}
 
 .black{
 	background: rgb(69,72,77); /* Old browsers */
@@ -123,3 +153,13 @@ img{
 
 }
 
+.container_color{
+background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}

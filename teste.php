@@ -1,11 +1,5 @@
 <?php
-get_header();
-
-$wp_tag->div('class="row"'); 
-
-	$wp_tag->div('class="container"');
-		
-		$wp_tag->div('class="row"');
+$wp_tag->div('class="row"');
 			if($_GET['cat'] != 0):
 			else:
 				$wp_tag->div('class="title_noticias_index"');
@@ -120,32 +114,5 @@ $wp_tag->div('class="row"');
 				$wp_tag->div;
 			endif;
 		
-			$wp_tag->div;
-	$wp_tag->div;
-	
-$wp_tag->div;	
-	
-get_footer();
-
-
-
-
-$wp_tag->wp_print('
-			<script src="wp-content/themes/wp-help-rpg/js/jquery.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-transition.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-alert.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-modal.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-dropdown.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-scrollspy.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-tab.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-tooltip.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-popover.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-button.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-collapse.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-carousel.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-typeahead.js"></script>');
-$wp_tag->body;
-$wp_tag->html;
-
-//Aula: https://www.youtube.com/watch?v=b08KgB-vDCo
-?>	
+		$wp_tag->div;
+?>

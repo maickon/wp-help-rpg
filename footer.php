@@ -34,7 +34,7 @@ $links = array(
 
 
 $wp_tag->div('class="row black"'); 
-	$wp_tag->div('class="container"');
+	$wp_tag->div('class="footer"');
 		$wp_tag->p('class="rodape"');
 			$menu = new WpTwitterBootstrapMenu();
 			$menu->WpFooter('Help Rpg', $menus, $links);

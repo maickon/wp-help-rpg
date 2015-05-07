@@ -43,7 +43,7 @@ $menus = array(
 				$page_4->post_title,
 				$page_5->post_title,
 				$page_6->post_title,
-				$page_7->post_title,
+				//$page_7->post_title,
 				$page_8->post_title
 			);
 
@@ -54,7 +54,7 @@ $links = array(
 				$page_4->ID,
 				$page_5->ID,
 				$page_6->ID,
-				$page_7->ID,
+				//$page_7->ID,
 				$page_8->ID,
 			);
 
