@@ -38,6 +38,16 @@ body{
     opacity: 0.9;
 }
 
+.page_post{
+    padding: 12px;
+    width: auto;
+    height: auto;
+}
+.img_post{
+	width: 280px;
+    height: 280px;
+}
+
 .post{
     padding: 12px;
     width: 280px;

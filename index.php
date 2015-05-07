@@ -14,22 +14,19 @@ $wp_tag->div('class="container"');
 						$wp_tag->a;
 	
 						$wp_tag->a('href="'.get_permalink().'"');
-							$wp_tag->img('src="wp-content/themes/wp-help-rpg/img/rpg-01.jpg" class="img-polaroid"');
+							$thumb_url = $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+							$wp_tag->img('src="'.$thumb_url[0].'" class="img-polaroid img_post"');
 						$wp_tag->a;
 						
-						$wp_tag->div('class="post"');
-				 			the_excerpt(); 
+						$wp_tag->div('class=""');
+				 			//the_excerpt(); 
 				 			$wp_tag->div('class="date"');
 				 				$wp_tag->wp_print('Publicado por <b>').the_author().$wp_tag->wp_print('</b> em ');
 				 				the_time("d/m/Y");
 				 				$wp_tag->wp_print("às: ");
 				 				the_time("g:i a");
 				 			$wp_tag->div;
-				 				
-					 		$wp_tag->a('class="btn" href="'.get_permalink().'"');
-					 			$wp_tag->wp_print('Mais Detalhes &raquo;');
-					 		$wp_tag->a;
-					 		
+				 		
 				 		$wp_tag->div;
 				 	$wp_tag->div;
 			 		
