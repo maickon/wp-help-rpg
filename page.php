@@ -1,16 +1,15 @@
 <?php
 get_header();
 $wp_tag->div('class="container"'); 
-
 	$wp_tag->div('class="row"');
 	
 		$wp_tag->div('class="span9"');
 			query_posts($query_string." &order=ASC");
 			if(have_posts()) : while(have_posts()) : the_post(); 
-					
-					$wp_tag->h4(); 
-						the_title(); 
-					$wp_tag->h4;
+
+					$wp_tag->div('class="title_noticias_index"');
+						the_title();
+					$wp_tag->div;
 
 					$wp_tag->div('class="page_post"');
 			 			the_content();
