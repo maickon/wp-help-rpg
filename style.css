@@ -24,7 +24,7 @@ Text Domain: WebDelivery
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-body{
+la{
 	background: rgb(242,245,246); /* Old browsers */
 	background: -moz-linear-gradient(-45deg,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 47%, rgba(200,215,220,1) 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(242,245,246,1)), color-stop(47%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
@@ -42,20 +42,14 @@ body{
 
 .title_noticias_index{
     margin-top: 14px;
-    margin-left: 50px;
     font-size: 20px;
     font-weight: bold;
+    width: 400px;
 }
 
 .title_index{
     font-size: 16px;
     font-weight: bold;
-}
-
-.page_post{
-    padding: 12px;
-    width: auto;
-    height: auto;
 }
 
 .img_post_index{
@@ -69,20 +63,17 @@ body{
 }
 
 .post_box_index{
-    padding: 4px;
     margin-bottom: 5px;
     margin-top: 15px;
 }
 
 .post_box{
-    padding: 4px;
-    margin-bottom: 5px;
     margin-top: 15px;
     margin-bottom: 20px;
+    float: left;
 }
 
 .post{
-    padding: 12px;
     width: 280px;
     height: 280px;
 }
@@ -103,18 +94,12 @@ body{
     margin-bottom: 14px;
 }
 
-.post_content{
-    width: auto;
-    height: auto;
-}
-
 .date{
 	font-weight: bold;
     font-size: 12px;
 }
 
 img{
-	margin:5px;
 	width: 280px;
 	height: 280px;
 }
@@ -141,6 +126,9 @@ img{
 	padding: 14px;
     margin: 14px;
 }
+
+.red{background-color: red;}
+.blue{background-color: blue;}
 
 .black{
 	background: rgb(69,72,77); /* Old browsers */
