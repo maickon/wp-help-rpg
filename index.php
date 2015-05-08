@@ -1,6 +1,5 @@
 <?php
 get_header();
-<<<<<<< HEAD
 
 $wp_tag->div('class="row"'); 
 
@@ -128,66 +127,6 @@ $wp_tag->div;
 	
 get_footer();
 
-
-
-
-$wp_tag->wp_print('
-			<script src="wp-content/themes/wp-help-rpg/js/jquery.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-transition.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-alert.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-modal.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-dropdown.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-scrollspy.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-tab.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-tooltip.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-popover.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-button.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-collapse.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-carousel.js"></script>
-		    <script src="wp-content/themes/wp-help-rpg/js/bootstrap-typeahead.js"></script>');
-=======
-$wp_tag->div('class="container"'); 
-	if(have_posts()) :
-		while(have_posts()) : 
-			the_post(); 
-			$wp_tag->a('href="'.get_permalink().'"');
-				$wp_tag->span('class="title"'); 
-					the_title(); 
-				$wp_tag->span;
-			$wp_tag->a;
-			
-			$wp_tag->div('class="content"');
-				$wp_tag->div('class="thumbnail"');
-					$wp_tag->img('src=""');
-				$wp_tag->div;
-				
-				$wp_tag->div('class="excerpt"');
-		 			the_excerpt(); 
-	 			$wp_tag->div;
-	 			
-	 		
- 				$wp_tag->div('class="public"');
-	 				$wp_tag->wp_print("Publicado em: ");
-	 				the_time("d/m/Y");
-	 				$wp_tag->wp_print("às: ");
-	 				the_time("g:i a");
- 				$wp_tag->div;
-	 		
-	 			
-	 		$wp_tag->div;
-	 		
-	 		$wp_tag->div('class="info"');
-	 			//the_content();
-	 		$wp_tag->div;
-	 		
-	 	endwhile;
-	 else:
-		$wp_tag->p(); 
-			$wp_tag->wp_print("Nenhum post encontrado!");
-		$wp_tag->p; 
-	endif;
-$wp_tag->div;
-
 //<!-- Bootstrap core JavaScript
 //================================================== -->
 //<!-- Placed at the end of the document so the pages load faster -->
@@ -217,7 +156,7 @@ $wp_tag->wp_print('
 			<script src="js/bootstrap-collapse.js"></script>
 			<script src="js/bootstrap-carousel.js"></script>
 			<script src="js/bootstrap-typeahead.js"></script>');
->>>>>>> fdce4656b21df90b1098329a629800075a341b51
+
 $wp_tag->body;
 $wp_tag->html;
 
