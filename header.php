@@ -64,7 +64,6 @@ $links = array(
 $menu = new WpTwitterBootstrapMenu();
 $menu->WpMenu('Help Rpg', $menus, $links, 1);
 
-new WpTwitterBootstrapMenu('Site Name', $menus, $links, 1);
 
 
 ?>
